@@ -1,0 +1,11 @@
+{
+  "src/main.tsx": {
+    "file": "web3-login.umd.cjs",
+    "src": "src/main.tsx",
+    "isEntry": true
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
+  }
+}

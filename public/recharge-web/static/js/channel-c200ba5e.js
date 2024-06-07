@@ -1,0 +1,1 @@
+import{u as o,i as d}from"./index-91e2b5ed.js";import{h as t}from"./index-9d169e54.js";import"./vant@4.0.2_vue@3.2.45-0f7d1012.js";async function r(o,d,r={}){try{const{code:o,data:a}=await t.post("/order/add",{toAddress:d.to,deliverGoods:"0",...d},r);if(200===o){a.orderId;window.location.href=a.url}}catch(a){}}o(),d.global.t;export{r as c};

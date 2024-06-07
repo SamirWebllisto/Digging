@@ -1,0 +1,1 @@
+const e=navigator.userAgent,a=e.indexOf("Android")>-1||e.indexOf("Adr")>-1;function n(){try{a?window.UllaClient.backToHome():window.webkit.messageHandlers.backToHome.postMessage(null)}catch(e){}}function o(){try{a?window.UllaClient.reloadNewPay():window.webkit.messageHandlers.reloadNewPay.postMessage(null)}catch(e){}}export{o as a,n as o};

@@ -1,0 +1,42 @@
+.form{
+  --adm-color-background: transparent;
+  --border-top: none;
+  --border-bottom: none;
+  --border-inner: none;
+  --adm-color-text-secondary: #7c7c7c;
+  --adm-font-size-7: 13px;
+  --padding-left: 0;
+  --padding-right: 0;
+
+  .input{
+    @apply flex justify-between items-center px-3 text-sm;
+    color: rgb(117, 117, 117);
+    background-image: url('./red_packet_bcg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  :global{
+    .adm-form-item-label{
+      @apply text-left;
+    }
+    .adm-list-item-content-main{
+      padding: 10px 0;
+    }
+  }
+
+
+  input{
+    font-size: 15px;
+    &::placeholder{
+      color: #757575!important;
+      font-size: 10px;
+      // line-height: 12px!important;
+      vertical-align: top;
+    }
+  }
+}

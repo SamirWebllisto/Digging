@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-prefers-color-scheme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- font family popins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+
+    <meta name="viewport"
+      content="width = device-width, initial-scale = 1.0, maximum-scale = 1.0, user-scalable = 0,viewport-fit=cover">
+    <title>WOW EARN</title>
+    <meta name="description"
+      content="Discover our wowearn web3 Platform, connecting users to mining, DeFi, staking, and yield farming. Dive into the world of blockchain today!" />
+    <style>
+      html, body{
+        font-family: 'Armstrong';
+        background-color: #141414 !important;
+      }
+      @keyframes spin {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}
+    </style>
+  </head>
+  <body>
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+    <div id="custom-loading"
+      style="position: fixed; inset: 0px; background-color: rgba(0, 0, 0, 0.02); visibility: hidden; opacity: 0; justify-content: center; align-items: center; z-index: 8888;top: 50%;left: 50%;transform: translate(-15px, -15px);transition: all 0.3s;">
+      <img src="/loading-primary.png" style="
+				width: 30px;
+				height: 30px;
+				-webkit-animation: spin 1s linear 1s 5 alternate;
+				animation: spin 1s linear infinite;">
+    </div>
+    <div id="root"></div>
+    <div id="walletconnect" style="display: none;"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

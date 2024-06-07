@@ -1,0 +1,6 @@
+/*!
+  * shared v9.2.2
+  * (c) 2022 kazuya kawaguchi
+  * Released under the MIT License.
+  */
+const e="undefined"!=typeof window,t="function"==typeof Symbol&&"symbol"==typeof Symbol.toStringTag,o=e=>t?Symbol(e):e,n=(e,t,o)=>a({l:e,k:t,s:o}),a=e=>JSON.stringify(e).replace(/\u2028/g,"\\u2028").replace(/\u2029/g,"\\u2029").replace(/\u0027/g,"\\u0027"),s=e=>"number"==typeof e&&isFinite(e),l=e=>"[object Date]"===h(e),i=e=>"[object RegExp]"===h(e),c=e=>k(e)&&0===Object.keys(e).length;function p(e,t){}const r=Object.assign;let f;const g=()=>f||(f="undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:"undefined"!=typeof window?window:"undefined"!=typeof global?global:{});function y(e){return e.replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;")}const u=Object.prototype.hasOwnProperty;function b(e,t){return u.call(e,t)}const d=Array.isArray,j=e=>"function"==typeof e,S=e=>"string"==typeof e,w=e=>"boolean"==typeof e,O=e=>null!==e&&"object"==typeof e,m=Object.prototype.toString,h=e=>m.call(e),k=e=>"[object Object]"===h(e),T=e=>null==e?"":d(e)||k(e)&&e.toString===m?JSON.stringify(e,null,2):String(e);export{d as a,k as b,S as c,w as d,r as e,j as f,g,i as h,O as i,y as j,s as k,c as l,n as m,l as n,o,e as p,b as q,T as t,p as w};

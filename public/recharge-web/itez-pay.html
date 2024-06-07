@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itez</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+      }
+    </style>
+    <!-- add js script -->
+    <script src="https://pay.itez.com/static/main/share/merchant.js"></script>
+  </head>
+  <body>
+    <!-- add container: id of container may be various but you must set it into parameters -->
+    <div id="widget-container"></div>
+
+    <!-- initialise the widget -->
+    <script type="text/javascript">
+      ItezWidget.run(parseQueryString(location.search))
+
+      function parseQueryString(queryString) {
+        const params = {}
+        if (queryString) {
+          if (queryString[0] === '?') {
+            queryString = queryString.substring(1)
+          }
+          const pairs = queryString.split('&')
+          for (let i = 0; i < pairs.length; i++) {
+            const pair = pairs[i].split('=')
+            const key = decodeURIComponent(pair[0])
+            const value = decodeURIComponent(pair[1] || '')
+            if (key) {
+              params[key] = value
+            }
+          }
+        }
+        return params
+      }
+    </script>
+  </body>
+</html>

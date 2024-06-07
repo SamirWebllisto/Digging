@@ -1,0 +1,35 @@
+.tab{
+  @apply flex justify-around items-start text-base text-center mt-1;
+
+  >div{
+    @apply bg-contain bg-no-repeat font-medium rounded-sm;
+    padding-top: 10px;
+
+    &.message{
+      background-image: url('./icons//msg-tab-1.png');
+      &.active{
+        background-image: url('./icons//msg-tab-1-active.png');
+      }
+    }
+
+    &.journalism{
+      background-image: url('./icons//msg-tab-2.png');
+      &.active{
+        background-image: url('./icons//msg-tab-2-active.png');
+      }
+    }
+
+    &.customerService{
+      background-image: url('./icons//msg-tab-3.png');
+      &.active{
+        background-image: url('./icons//msg-tab-3-active.png');
+      }
+    }
+  }
+}
+
+.msgitem{
+  :global(.adm-badge-wrapper) {
+    width: 100%;
+  }
+}
